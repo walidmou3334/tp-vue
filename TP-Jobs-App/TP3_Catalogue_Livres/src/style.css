@@ -1,0 +1,62 @@
+:root {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #202020;
+  background: #f4f4f4;
+}
+
+* { box-sizing: border-box; }
+body { margin: 0; }
+button, input, select { font: inherit; }
+button { cursor: pointer; }
+
+.page { max-width: 1100px; margin: 0 auto; padding: 30px 20px; }
+.page-header { margin-bottom: 25px; }
+h1 { margin: 0 0 6px; font-size: 28px; }
+h2 { margin: 0 0 20px; font-size: 19px; }
+h3 { margin: 0 0 8px; font-size: 17px; }
+p { margin-top: 0; }
+.page-header p, .catalogue-top p { font-size: 13px; color: #666; }
+
+.layout { display: grid; grid-template-columns: 300px 1fr; gap: 22px; align-items: start; }
+.form-panel, .catalogue { background: white; border: 1px solid #ddd; border-radius: 5px; padding: 20px; }
+.form-panel form { display: flex; flex-direction: column; gap: 14px; }
+.form-panel label, .filters label { display: block; font-size: 13px; font-weight: bold; }
+.form-panel input:not([type="checkbox"]),
+.form-panel select, .filters input, .filters select {
+  display: block; width: 100%; padding: 9px; margin-top: 6px;
+  border: 1px solid #ccc; background: #fff; border-radius: 4px;
+}
+.required { color: #b22; }
+.checkbox-label { display: flex !important; align-items: center; gap: 8px; }
+.checkbox-label input { margin: 0; }
+
+.btn { padding: 8px 11px; border: 1px solid #bbb; border-radius: 4px; background: #fafafa; font-size: 12px; }
+.btn:hover { background: #eee; }
+.btn-primary { padding: 10px; color: white; background: #2766a4; border-color: #2766a4; font-weight: bold; }
+.btn-primary:hover { background: #1d5286; }
+.btn-primary:disabled { opacity: 0.5; cursor: not-allowed; }
+.btn-delete { color: #a12727; border-color: #dfb3b3; background: #fff; }
+.btn-delete:hover { background: #fbeaea; }
+
+.chips { display: flex; flex-wrap: wrap; gap: 6px; }
+.chip, .keyword { display: inline-block; padding: 4px 7px; background: #eee; border-radius: 3px; font-size: 11px; }
+.chip button { border: none; background: transparent; cursor: pointer; margin-left: 5px; }
+
+.catalogue-top { margin-bottom: 18px; }
+.catalogue-top h2 { margin-bottom: 4px; }
+.filters { display: grid; grid-template-columns: 1fr 190px; gap: 12px; margin-bottom: 18px; }
+.books-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; }
+.book-card { border: 1px solid #ddd; border-radius: 4px; padding: 16px; min-width: 0; }
+.book-card .genre { display: inline-block; padding: 4px 7px; margin-bottom: 12px; font-size: 11px; background: #e8eef6; }
+.book-card .author { color: #555; margin-bottom: 6px; font-size: 13px; }
+.book-card .year { color: #777; font-size: 12px; }
+.book-keywords { display: flex; flex-wrap: wrap; gap: 5px; margin: 12px 0; }
+.book-footer { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; border-top: 1px solid #eee; padding-top: 12px; margin-top: 14px; }
+.favorite-badge { font-size: 11px; font-weight: bold; color: #306535; }
+.loading, .empty-state { border: 1px solid #ddd; padding: 18px; background: white; color: #555; }
+
+@media (max-width: 760px) {
+  .layout { grid-template-columns: 1fr; }
+  .filters { grid-template-columns: 1fr; }
+  .books-grid { grid-template-columns: 1fr; }
+}
