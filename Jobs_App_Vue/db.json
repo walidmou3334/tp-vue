@@ -1,0 +1,44 @@
+{
+  "jobs": [
+    {
+      "id": "1",
+      "title": "Développeur Java",
+      "description": "Participer au développement et à la maintenance d’applications Java. Contribuer aux tests et à la documentation technique.",
+      "salary": 9000,
+      "experience": 2,
+      "createdAt": "2026-10-20",
+      "type": "CDI",
+      "location": "Casablanca"
+    },
+    {
+      "id": "2",
+      "title": "Développeur Frontend Vue.js",
+      "description": "Créer des interfaces web avec Vue.js, intégrer des API REST et assurer la qualité des composants.",
+      "salary": 7500,
+      "experience": 1,
+      "createdAt": "2026-10-22",
+      "type": "CDD",
+      "location": "Safi"
+    },
+    {
+      "id": "3",
+      "title": "Stage Développement Web",
+      "description": "Aider à la création d’une application web et participer aux réunions de suivi du projet.",
+      "salary": 2500,
+      "experience": 0,
+      "createdAt": "2026-10-25",
+      "type": "Stage",
+      "location": "Marrakech"
+    },
+    {
+      "id": "4",
+      "title": "Développeur Full Stack",
+      "description": "Développer et maintenir des fonctionnalités frontend et backend en collaboration avec une équipe technique.",
+      "salary": 11000,
+      "experience": 3,
+      "createdAt": "2026-10-27",
+      "type": "CDI",
+      "location": "Rabat"
+    }
+  ]
+}
